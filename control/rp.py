@@ -4,6 +4,7 @@ import time
 if __name__=="__main__":
     print("port")
     hand=MyGripper_H100("/dev/ttyCH343USB0", 115200,id=14)
+    print("Device says its ID is", g.get_gripper_Id())
     print(hand.port)
     print(hand.ser)
     hand.set_gripper_pose(0,0)
