@@ -1,4 +1,4 @@
-from MyHand import MyGripper_H100, TimeoutError
+from MyHand import MyGripper_H100
 PORT = "/dev/ttyUSB0"
 for guess in range(1, 31):
     try:
