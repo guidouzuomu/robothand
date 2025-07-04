@@ -1,5 +1,5 @@
 from MyHand import MyGripper_H100
-PORT = "/dev/ttyUSB0"
+PORT = "/dev/ttyCH343USB0"
 for guess in range(1, 31):
     try:
         g = MyGripper_H100(PORT, 115200, id=guess)
