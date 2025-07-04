@@ -6,6 +6,7 @@ if __name__=="__main__":
     hand=MyGripper_H100("/dev/ttyAMA0", 115200)
     print("portend")
     hand.set_gripper_pose(0,0)
+    print("init")
     time.sleep(2)
     print("pose")
     hand.set_gripper_pose(1,5)
