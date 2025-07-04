@@ -4,7 +4,8 @@ import time
 if __name__=="__main__":
     print("port")
     hand=MyGripper_H100("/dev/ttyAMA0", 115200)
-    print("portend")
+    print(hand.port)
+    print(hand.ser)
     hand.set_gripper_pose(0,0)
     print("init")
     time.sleep(2)
