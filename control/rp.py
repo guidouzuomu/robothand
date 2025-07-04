@@ -3,7 +3,7 @@ from MyHand import MyGripper_H100
 import time
 if __name__=="__main__":
     print("port")
-    hand=MyGripper_H100("/dev/ttyAMA0", 115200,id=14)
+    hand=MyGripper_H100("/dev/ttyAMA0", 115200)
     print("portend")
     hand.set_gripper_pose(0,0)
     time.sleep(2)
