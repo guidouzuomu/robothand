@@ -3,7 +3,6 @@ from MyHand import MyGripper_H100
 import time
 if __name__=="__main__":
     print("port")
-    print("Device says its ID is", hand.get_gripper_Id())
 
     hand=MyGripper_H100("/dev/ttyCH343USB0", 115200,id=14)
     print("Device says its ID is", hand.get_gripper_Id())
